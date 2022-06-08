@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>🍜玉米猪肉水饺</title>
+      <link href="/cl45oo32z0006ilow3azx6rua.html"/>
+      <url>/cl45oo32z0006ilow3azx6rua.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h2><ol><li>好吃。</li><li>总是忘记其中一种或者几种材料，导致味道失真- -。</li><li>备忘。</li></ol><h2 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h2><h3 id="主料"><a href="#主料" class="headerlink" title="主料"></a>主料</h3><ol><li>五花肉</li><li>玉米</li><li>木耳</li><li><strong>鸡蛋</strong></li><li>小米辣(家里吃比较多)</li></ol><h3 id="辅料"><a href="#辅料" class="headerlink" title="辅料"></a>辅料</h3><p>盐、生抽、老抽、香油、食用油、葱姜末、洋葱、十三香</p><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>搅拌…</p><p>主要注意事项：</p><ol><li>玉米颗粒不要太小，否则容易被肉味儿冲淡，失去甘甜味儿。</li><li>记得放颗蛋，这样在收入比较多的情况下就不会太“柴”了，吃起来比较润。</li><li>肉饺子煮熟三沸后再煮2-3分钟，也就差不多了。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我不是吃货 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>🧑‍💻为SSH登陆开启邮件提醒通知</title>
+      <link href="/cl45oo338000lilowb2ed041i.html"/>
+      <url>/cl45oo338000lilowb2ed041i.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>  想为自己的服务器开启登陆SSH登陆提醒，当有人登陆服务器时能够邮件通知到自己。避免服务器被“攻占”了自己还全然不知(这里只代表SSH登陆)。</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>  实际这个方法时之前在网络上搜罗到的，不过忘记了参考链接。这里权当是备忘分享了。</p><p>  原理也比较简单，修改pam的sshd配置，在成功创建ssh session之后调用一段shell脚本执行发邮件操作即可。</p><p>  (Ubuntu 18.04版本下配置)</p><ul><li>登陆通知代码</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/sh</span></span><br><span class="line"></span><br><span class="line">sender=&quot;sender@foo.bar&quot;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">这里直接发给root了，实际因为机器上已经装了邮件服务器了，在邮件服务器中做了映射，将root映射到了自己的邮箱账户</span></span><br><span class="line">recepient=&quot;root@foo.bar&quot;</span><br><span class="line"></span><br><span class="line">if [ &quot;$PAM_TYPE&quot; != &quot;close_session&quot; ]; then</span><br><span class="line">    host=&quot;`hostname`&quot;</span><br><span class="line">    subject=&quot;SSH Login: $PAM_USER from $PAM_RHOST on $host&quot;</span><br><span class="line">    # Message to send, e.g. the current environment variables.</span><br><span class="line">    message=&quot;`env`&quot;</span><br><span class="line">    # 使用mailx发送邮件</span><br><span class="line">    echo &quot;$message&quot; | mailx -r &quot;$sender&quot; -s &quot;$subject&quot; &quot;$recepient&quot;</span><br><span class="line">fi</span><br></pre></td></tr></table></figure><ul><li>开启配置</li></ul><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/pam.d/sshd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 编辑sshd配置 最后一行增加如下</span></span><br><span class="line">session optional pam_exec.so seteuid /etc/ssh/login_notify.sh</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 好物分享 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>🍜炒花蛤技巧</title>
+      <link href="/cl45oo33a000nilow54rk11cf.html"/>
+      <url>/cl45oo33a000nilow54rk11cf.html</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>去沙</p><p>总的来说，不知道是不是我操作不当，反正网上说的双手来回交叉翻动、不锈钢盆左右抖动等等这类让花蛤“晕船”的办法似乎都没生效，就是不开口，搞得我以为他们都挂了。</p><p>开水直接焖煮一分钟 或者 花蛤洗净擦干热锅不放油直接翻炒（放少量水），这两个办法应该是靠谱的。我用的后者，还是可以吐出一些脏东西的。</p><p>翻炒过程中，花蛤开口吐过之后就可以拎出来了，边烧边弄，最后整体洗干净就好了。</p><p>网上还有放香油什么的，没试过。时间够的话还是盐水静置好了。</p></li><li><p>味道</p><p>看了好几个教程，翻炒过程中都加入了少量蚝油，以蚝治蛤？ 倒是味道很鲜美，哈哈。还额外放了生抽跟少量糖，提鲜用。</p><p>最后一步很关键，一定要做个淀粉勾芡，最后出锅前淋入，出来的效果软软的 很有口感，好吃！</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我不是吃货 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>🧑‍💻Mac自用软件集锦</title>
+      <link href="/cl45oo32w0003ilow739darl5.html"/>
+      <url>/cl45oo32w0003ilow739darl5.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="不仅限于Mac-Just-For-Getting-Rid-of-Googles"><a href="#不仅限于Mac-Just-For-Getting-Rid-of-Googles" class="headerlink" title="不仅限于Mac(Just For Getting Rid of Googles)"></a>不仅限于Mac(Just For Getting Rid of Googles)</h2><p>之前找到了很多不错的专门用于寻找替代软件的网站，比如 alternativeto.net 等等，很有效，推荐长期使用。</p><ul><li><p>分应用代理软件</p><p>proximac，好用。</p></li><li><p>笔记软件</p><p>Vnote，纯本地Markdown，磁盘目录存储，方便同步（非DB文件存储，不用担心数据损坏）</p></li><li><p>加密软件</p><p>Cryptomator，AES加密，磁盘目录混淆存储，非DB文件，方便同步。</p><p>App端非开源，不建议使用，或者禁用网络使用。</p></li><li><p>同步工具</p><p>Syncthing，多机器去中心化存储，tcp传输协议，支持over ssh。单纯的同步工具，不需要DB，没有其他花里胡哨的。配合加密软件完美替代Dropbox（本地编辑，加密软件实时加密输出加密文件，syncthing同步加密文件至Server端，相互同步）</p></li><li><p>密码管理软件</p><p>KeepassXC，keepass的跨平台版本，好用，本身支持主密钥+密钥文件解锁，配合同步工具可实现密码数据库文件的跨平台实时同步。</p><p>就是如果没有搭起前面的环境的话，想知道自己的密码好难，有些常用密码还是要自己记录下。</p><p>最终还是自建了bitwarden服务，感觉还不错，算是可以多端同时使用了。</p></li><li><p>工程画图</p><p>draw.io 简单可依赖，可本地离线。</p></li><li><p>Mac清理软件</p><p>大文件&#x2F;目录清理排查，力推OminiDiskSweeper，比其他冠冕堂皇的所谓清理软件强太多。</p></li><li><p>分屏工具</p><p>ShiftIt <a href="https://github.com/fikovnik/ShiftIt/releases">https://github.com/fikovnik/ShiftIt/releases</a> 简单可靠 虽然没再更新了 不过目前的Mac版本依然可用（Catalina 10.15.5）</p></li><li><p>状态栏管理</p><p>Dozer <a href="https://github.com/Mortennn/Dozer/releases">https://github.com/Mortennn/Dozer/releases</a> 图标隐藏工具 简洁高效</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 好物分享 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>📝清空</title>
+      <link href="/cl45oo339000milow4b6v6iq7.html"/>
+      <url>/cl45oo339000milow4b6v6iq7.html</url>
+      
+        <content type="html"><![CDATA[<p>本以为会花很久才能清理完的收件箱，外加贼不靠谱的客户端操作。</p><p>不曾想，用官网页面操作快得要死，几年时光的积累，也不过如此。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 心情随笔 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>📝All Refreshed</title>
+      <link href="/cl45oo32t0001ilow6n80c2rr.html"/>
+      <url>/cl45oo32t0001ilow6n80c2rr.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="复活"><a href="#复活" class="headerlink" title="复活"></a>复活</h2><p>博客重新部署完毕.Over.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 心情随笔 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>🍜蒸面条</title>
+      <link href="/cl45oo3310008iloweoy0ag85.html"/>
+      <url>/cl45oo3310008iloweoy0ag85.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h2><h3 id="主料"><a href="#主料" class="headerlink" title="主料"></a>主料</h3><ol><li>五花肉100~150g 一定要略肥的；</li><li>青椒（或白菜，黄豆芽，长，短豆角等均可）适量</li><li>机制湿面500g（薄型做捞面条用那种，不要用那种厚型的做汤面条的，或者用很细的那种湿面为最好）</li></ol><h3 id="辅料"><a href="#辅料" class="headerlink" title="辅料"></a>辅料</h3><p>生姜，酱油，盐</p><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol><li>面条放蒸锅隔水蒸，锅冒白气后10~15分种端锅，放置一边备用;</li><li>青椒切块，生姜切片或丝（我喜欢切丝，因为那样吃的时候不容易感觉到）;</li><li>五花肉切薄片，不要特别薄，否则蒸后肉片会找不到的；　</li><li>肉片放容器中加适量盐及酱油拌匀;</li><li>炒锅加油，烧热，加生姜丝，炒肉;</li><li>然后放入青椒翻炒;</li><li>稍焖后加适量量酱油、水及食盐，盖锅盖略炖几分钟端锅。注意：酱油、食盐及水量应较多，要求菜汤量较多、略咸些，且酱色较浓（因为面条不加盐，菜汤要为面条上味及上色）;</li><li>把前面蒸好的面条放入炒菜锅，和炒好的菜用筷子及锅铲配合拌匀，最好是拌匀后基本上面条全部染上不太浓的酱色，且菜汤基本被面条吸收沾染不留太多剩余。所以炒菜时酱油、盐、水加的量较难掌握l</li><li>蒸锅在笼篦上铺上笼布（无笼布用大片白菜叶子铺匀也可），把上述拌匀的面条均匀铺在笼篦上，盖严锅盖（必要时可加重物于锅盖上），隔水蒸，时间掌握在冒哈气后20~30分种即可端锅。</li></ol><p>原文链接：<a href="http://www.xinshipu.com/zuofa/62589">http://www.xinshipu.com/zuofa/62589</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 我不是吃货 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2️⃣stable is everything</title>
+      <link href="/cl45oo333000bilow2n6i0na6.html"/>
+      <url>/cl45oo333000bilow2n6i0na6.html</url>
+      
+        <content type="html"><![CDATA[<p>天真的我，以为linux下可以挂载ntfs了，就安心地把家目录所有内容都copy到ntfs分区下然后用软链链过去了。可谁知ntfs分区下chmod chown都没用的…… 而刚好有些要求~&#x2F;.ssh目录下的文件权限仅自己可见…. 玩脱了….  改了默认umask结果别的没法执行了，哎… 为了快速解决，只能先copy回来了</p><p>等之后闲下来了，再尝试把umask改为drwx……试试吧</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 心情随笔 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>🧑‍💻ssh常用操作</title>
+      <link href="/cl45oo3320009ilow0e2h6xns.html"/>
+      <url>/cl45oo3320009ilow0e2h6xns.html</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>What？<br>ssh 是secure shell(安全外壳协议)的简写，是建立在应用层和传输层基础上的安全协议，专为远程登陆会话和其他网络服务提供安全性的协议。利用ssh协议可以有效地防止远程管理过程中的信息泄露问题。<span id="more"></span></p></li><li><p>Why?<br>传统的一些网络协议，比如ftp、pop、telnet等本质来说都不是安全的，因为他们在网络上以明文的方式，很可能会被抓取到导致泄露，进而可能会出现诸如中间人攻击之类的问题。而使用ssh时，可以把所有传输的数据进行加密，而且在传输时还可以进行压缩。<br>总而言之，ssh提供了一种避免明文传输用户名密码和消息以至于必要信息泄露的方式方法。</p></li><li><p>How?<br>之前在windows下，更多的是直接使用类似之类的东东，后来到了ubuntu和mac下，一方面是因为xshell没有跨平台的版本，另一方面，后两者自带ssh，配置一下也就ok了。<br>1.基本配置<br>使用自带ssh的话，图方便安全就得自己生成ssh的密钥对了。常用命令的话就是(~&#x2F;.ssh目录下操作)</p><pre>ssh-keygen -t rsa</pre><p>默认会自动生成rsa和rsa.pub两个文件，当使用ssh连接到服务器时会默认使用这对密钥。<br>若要连接至服务器，则可直接ssh username@server即可，可能会需要输入密码进行登陆<br>2.config配置<br>而当想要使用不同密钥去连接不同服务器时，就需要配置_<strong>config文件</strong>_了，示例：<br>同样是在~&#x2F;.ssh下vim config</p><pre>#配置格式：#Host host别名#&nbsp;&nbsp; HostName&nbsp;&nbsp;&nbsp; host名称(ip或者域名)#&nbsp;&nbsp; Port&nbsp;&nbsp;&nbsp; 端口#&nbsp;&nbsp; User&nbsp;&nbsp;&nbsp; 用户名#&nbsp;&nbsp; IdentityFile&nbsp;&nbsp;&nbsp; ~/.ssh/私钥文件名#Host a.comHostName www.a.comPort&nbsp;&nbsp;&nbsp; 22User&nbsp;&nbsp;&nbsp; urUserNameIdentifyFile ~/.ssh/urPrivateKey</pre><p>这样，之后需要ssh某台服务器时，直接ssh a.com即可，而不用非要输入<a href="mailto:&#117;&#x72;&#85;&#115;&#x65;&#114;&#x4e;&#x61;&#109;&#x65;&#x40;&#119;&#119;&#119;&#x2e;&#x61;&#46;&#99;&#111;&#109;">&#117;&#x72;&#85;&#115;&#x65;&#114;&#x4e;&#x61;&#109;&#x65;&#x40;&#119;&#119;&#119;&#x2e;&#x61;&#46;&#99;&#111;&#109;</a>这种形式了。不过这种配置可能依旧需要输入密码。<br>3.不用密码<br>如果想要不再输入密码的话，实际就需要让服务器信任自己机器的公钥了。做法也很简单，只需要将ssh-keygen生成的密钥对中的公钥交给服务器，然后让其加入到自己的authorized_keys中。我一般都是直接把.pub文件scp到服务器的.ssh目录下，然后登陆服务器，直接将公钥追加至文件的结尾</p><pre>cat urPublickKey &gt;&gt; authorized_keys</pre><p>DNOE.<br>&amp;nbsp;</p></li><li><p>To be continued…</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 好物分享 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
