@@ -1,2 +1,9 @@
-User-agent:*
-Disallow:/
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: baiduspider
+Disallow: /
+
+User-agent: *
+Disallow: /assets/
+Disallow: /w*/
