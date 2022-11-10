@@ -4,7 +4,7 @@
   <url>
     <loc>http://lozt.eu.org/job/index.html</loc>
     
-    <lastmod>2022-11-08</lastmod>
+    <lastmod>2022-11-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,7 @@
   <url>
     <loc>http://lozt.eu.org/about/index.html</loc>
     
-    <lastmod>2022-11-08</lastmod>
+    <lastmod>2022-11-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -121,7 +121,7 @@
 
   <url>
     <loc>http://lozt.eu.org/</loc>
-    <lastmod>2022-11-08</lastmod>
+    <lastmod>2022-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -131,21 +131,21 @@
   
   <url>
     <loc>http://lozt.eu.org/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2022-11-08</lastmod>
+    <lastmod>2022-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://lozt.eu.org/categories/%E5%A5%BD%E7%89%A9%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2022-11-08</lastmod>
+    <lastmod>2022-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://lozt.eu.org/categories/%E6%88%91%E4%B8%8D%E6%98%AF%E5%90%83%E8%B4%A7/</loc>
-    <lastmod>2022-11-08</lastmod>
+    <lastmod>2022-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
