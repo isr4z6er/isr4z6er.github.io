@@ -1,5 +1,3 @@
 payload:
   - '+.pornhub.com'
   - '+.xvideos.com'
-  - '+.javhd.com'
-  - '+.spankbang.com'
