@@ -28622,6 +28622,7 @@ payload:
   - '+.wearehairy.com'
   - '+.wearn.com'
   - '+.weather'
+  - '+.weather-data.apple.com.akadns.net'
   - '+.weatherchannel'
   - '+.weathtown.com'
   - '+.weav.xyz'
