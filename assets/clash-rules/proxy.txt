@@ -25904,6 +25904,7 @@ payload:
   - '+.teleconomiser.com'
   - '+.telefonica'
   - '+.telega.one'
+  - '+.telegram-cdn.org'
   - '+.telegram-porn.com'
   - '+.telegram.dog'
   - '+.telegram.me'
