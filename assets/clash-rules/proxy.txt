@@ -21134,6 +21134,7 @@ payload:
   - '+.overcast.fm'
   - '+.overdaily.org'
   - '+.overdrive.com'
+  - '+.overleaf.com'
   - '+.overplay.net'
   - '+.oversea.istarshine.com'
   - '+.overthumbs.com'
