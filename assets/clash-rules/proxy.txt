@@ -23297,6 +23297,8 @@ payload:
   - '+.quutoo.net'
   - '+.qvc'
   - '+.qvodzy.org'
+  - '+.qwant.com'
+  - '+.qwant.it'
   - '+.qxbbs.org'
   - '+.qy521.vip'
   - '+.qz.com'
