@@ -1,8 +1,0 @@
-# options
-reload   60s
-
-# bypass addresses
-*.pornhub.com
-*.xvideos.com
-*.javhd.com
-*.spankbang.com
