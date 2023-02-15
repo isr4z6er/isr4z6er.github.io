@@ -2315,6 +2315,7 @@ payload:
   - '+.7986943.com'
   - '+.799299.com'
   - '+.79ten.com'
+  - '+.7aipai.com'
   - '+.7capture.com'
   - '+.7cow.com'
   - '+.7hg8.vip'
