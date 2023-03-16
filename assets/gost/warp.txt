@@ -4,3 +4,4 @@ reverse  true
 
 # bypass addresses
 *.netflix.com
+*.openai.com
