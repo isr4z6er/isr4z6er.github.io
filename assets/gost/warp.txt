@@ -1,7 +1,0 @@
-# options
-reload   60s
-reverse  true
-
-# bypass addresses
-*.netflix.com
-*.openai.com
