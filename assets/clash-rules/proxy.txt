@@ -9272,6 +9272,7 @@ payload:
   - '+.iphine.com'
   - '+.iphone-cd.com'
   - '+.iphone-cn.com'
+  - '+.iphone-ld.origin-apple.com.akadns.net'
   - '+.iphone-sh.com'
   - '+.iphone-vip1.com'
   - '+.iphone-vip2.com'
