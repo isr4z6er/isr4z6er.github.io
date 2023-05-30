@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>搭建个人NAS</title>
+      <link href="/My-NAS.html"/>
+      <url>/My-NAS.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>  几年前自己买了一块RockPro64，想着自己搞个NAS用用，然而其实历史经验告诉我，自己动手能力其实挺一般的。之所以自己搞，主要还是因为穷吧，一个简简单单两盘位的群晖NAS最便宜也要接近1K RMB了。<br>  后来看了下就想着拿树莓派之类的SBC挂个硬盘得了，比来比去还是觉得RockPro64性价比更高，于是就下单了一组，包括SBC、NAS盒子、Wifi组件、风扇、CPU散热片。</p><p>  最早最早我是直接给RK64刷的其实是OpenMediaVault，奈何总是用着不顺手(更多的是把它当服务器用，不如直接用Linux来得顺手)，后来就换了Armbian一直到现在（不用Arch还是因为当时自己菜）。<br>  在其上搭建过Synchting作文件同步、Radicale做CalDav(同步联系人、日历等)、calibre-server做在线图书管理和阅读、VaultWarden做密码管理软件，以及后来直接上了Nextcloud大一统。<br>  用Nextcloud最初也是因为看到了TG群里有大佬提到了该服务，在这之前我重点还是用Syncthing的，当时看了下其似乎可以覆盖目前我的几乎所有需求了，似乎也值得一搞。当然了后续的坑也是一步步踩的…</p><p>  现在回想起来，其实这其中的投入远比直接买NAS要高的，相关技能越不熟练成本越大。因为花了太多时间去debug和查找资料了，而我又是一个如此健忘的人，经常需要重新检索之前已经了解的知识点，所以也是<br>  为了避免后续再忘记，把之前遇到的一些实践经验好好记录下来，分享给以后的自己吧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nextcloud </tag>
+            
+            <tag> NAS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>In Memory of Haoel</title>
       <link href="/In-Memory-Of-Haoel.html"/>
       <url>/In-Memory-Of-Haoel.html</url>
