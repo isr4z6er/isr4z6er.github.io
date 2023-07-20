@@ -2333,6 +2333,7 @@ payload:
   - '+.bbbaihu.vip'
   - '+.bbc'
   - '+.bbc-anal.com'
+  - '+.bbc-reporting-api.app'
   - '+.bbc.com'
   - '+.bbcchinese.com'
   - '+.bbcpersian.com'
