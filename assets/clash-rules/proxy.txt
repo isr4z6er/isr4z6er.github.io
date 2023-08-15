@@ -5422,6 +5422,7 @@ payload:
   - '+.dunlop'
   - '+.duns'
   - '+.dunyabulteni.net'
+  - '+.duolingo.com'
   - '+.duoweitimes.com'
   - '+.duoweiweek.com'
   - '+.duping.net'
