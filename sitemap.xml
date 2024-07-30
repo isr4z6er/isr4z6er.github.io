@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://loztone.top/job/index.html</loc>
+    <loc>https://loztone.top/tweets-202211.html</loc>
+    
+    <lastmod>2024-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://loztone.top/about/index.html</loc>
     
     <lastmod>2024-07-30</lastmod>
     
@@ -23,42 +32,6 @@
     <loc>https://loztone.top/My-NAS.html</loc>
     
     <lastmod>2024-07-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://loztone.top/tweets-202211.html</loc>
-    
-    <lastmod>2024-07-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://loztone.top/about/index.html</loc>
-    
-    <lastmod>2024-07-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://loztone.top/[%E5%90%83]%E7%8E%89%E7%B1%B3%E7%8C%AA%E8%82%89%E6%B0%B4%E9%A5%BA.html</loc>
-    
-    <lastmod>2022-05-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://loztone.top/[%E5%90%83]%E8%92%B8%E9%9D%A2%E6%9D%A1.html</loc>
-    
-    <lastmod>2022-05-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
